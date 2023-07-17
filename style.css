@@ -1,0 +1,377 @@
+ /*
+ * [Modified] Modern CSS Reset
+ * @link https://github.com/hankc hizljaw/
+ modern-css-reset
+ */
+
+ /*Box sizing rules */
+ *,
+ *::before,
+ *::after
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4, 
+
+/* Set core body defaults */
+body {
+}
+
+/* Make images easier to work with */
+img 
+  
+/* Inherit fonts for inputs and buttons
+*/ input,
+
+ /* Typography*/
+h1, 
+h2, 
+h3 li {
+    font-family: "Kulim Park", sans-serif;
+    scroll-behavior: smooth;
+    text-rendering: 1.5;
+    font-size: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+ 
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 24px;
+}
+
+
+/*Header */
+header {
+    position: relative;
+    padding: 60px 0;
+    min-height: 50vh;
+    text-align: center;
+    background-image: url(images/starry-sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: inset 100vw 100vh rgba(22, 15, 100, 0.6);
+}
+
+header h1{
+    color:#ff7ca6;
+}
+
+header .lead {
+    max-width: 60ch;
+}
+
+header img {
+    position: absolute;
+    bottom: 1vh;
+    max-height: 48vh;
+    max-width: 25vw;
+    left: 0;
+}
+
+/* Main Conent*/
+main{
+    color:#767676
+}
+
+#about {
+    background-image: url(images/stars-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+}
+
+@media (max-width: 800px) {
+    #about .max-line-length {
+        max-width: 50ch;
+ 
+   #about {
+    background-size: 25vw auto;
+    background-position: top right;
+   } 
+   }
+   
+   #tours .card {
+    flex-basis: 34px;
+   }
+}
+
+#tours {
+    background-image: linear-gradient(-20deg,
+    rbga(121, 147, 221, 0.5) 20%,
+    rgba(251, 169, 195, 0.9) 100%
+
+    ),
+    url(images/starry-sky.jpg)
+}
+
+/*Componet: Nav */
+
+nav{
+    background: rgba(251, 169, 195, 0.95);
+    padding: 0.25cm 0;
+    display: inline-block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border-radius: 0 0 0 4px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li {
+    padding: 0 0.5cm;
+}
+
+nav a {
+    color:#150f64;
+    text-decoration: none;
+}
+
+nav a :hover {
+    text-decoration: underline;
+}
+
+/*Componet Card*/
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+    background-color: #fff;
+
+}
+
+.card__img {
+    min-height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+}
+
+
+/*Type Utilities*/
+.lead{
+    font-size: 125%;
+    letter-spacing: 0.03cm;
+}
+
+.max-line-length {
+    }
+
+.list-unstyled {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+/* Color Utilities */
+.background-dark {
+    background-color:#150f64;
+    color:#dcd9ee;
+}
+
+.background-black {
+    background-color:#040234;
+    color: #dcd9ee;
+}
+
+.text-dark {
+    color: #150f64;
+}
+
+.text-medium{
+    color:#7893dc
+}
+
+/* Utilities*/
+
+.wrapper{
+    max-width:1024px;
+    padding-left:24px;
+    padding-right:24;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#about {
+    background-image: url("images/stars-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain; 
+}
+
+/* Componet Card*/
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+    background-color: #fff;
+
+}
+
+.card__img {
+    min-height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px 8px 0 0;
+    box-shadow: inset 0 0 30px 60px rbga(21, 15, 100, 0.3);
+    transition: box-shadow 80ms ease-in-out;
+}
+
+
+.card_content {
+    padding: 24px;
+}
+
+.card h3 span {
+    font-family: monospace;
+    font-size: 0.8cm;
+    padding: 0.05cm 0.25cm;
+    background-color: rgba(225, 124, 166, 0.4);
+    border-radius: 4px;
+}
+
+/*Componet Button*/
+.button {
+    text-decoration: none;
+    padding: 0.5cm 1cm;
+    border-radius: 4px;
+    background-color: #150f64;
+    color: #ff7ca6;
+    font-weight: bold; 
+    display: inline-block;
+    text-align: center;
+    line-height: 1.1;
+}
+
+button.button {
+    border: none;
+    cursor: pointer;
+}
+
+/*Componet Form */
+
+form {
+    display: grid;
+    grid-gap: 24px;
+    max-width: 60ch;
+}
+
+.form-field {
+    display: grid;
+    grid-gap: 8px;
+}
+
+.form-field .button{
+    justify-self: start;
+}
+
+.form-input {
+    border: 1px solid;
+    border-radius: 4px;
+    height: 2cm;
+    padding: 0 0.5;
+    font-size: 10px;
+}
+
+label {
+    color:#150f64;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/*Type Utilities*/
+.lead {
+    font-size: 125%;
+    letter-spacing: 0.003;
+}
+
+.max-line-length {
+    max-width: 60ch;
+}
+
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*Color Utilities*/
+.background-dark{
+    background-color:#150f64;
+    color:#dcd9ee;
+}
+
+.background-black {
+    background-color: #040234
+    color #dcd9ee;
+}
+
+.text-dark {
+    color:#150f64
+}
+
+.text-medium {
+    color:#7893dc;
+}
+
+/* Utilities*/
+
+.wrapper{
+    max-width:1024px;
+    padding-left:24px;
+    padding-right:24px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flexbox--3col > * {
+    flex: 0 1 30%;
+}
+
+.flexbox--aligncenter {
+    align-items: center;
+}
+
+ .padding-v-md {
+    padding-top:24px;
+    padding-bottom: 24px;
+}
+
+.padding-v-lg{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.margin-v-0{
+    margin: top 0;
+    margin-bottom: 0;
+}
+
+.margin-v-lg {
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.max-line-length {
+    max-width: 60ch;
+}
